@@ -8,12 +8,14 @@ o.shipmode,
         o.ordercostprice,
         o.ordersellingprice,
 --from raw_cusstomer
+c.customerid,
 c.customername,
 c.segment,
 c.country,
 --from raw_product
 p.category,
 p.productname,
+p.productid,
 p.subcategory
 FROM
     {{ ref('raw_order') }} as o
