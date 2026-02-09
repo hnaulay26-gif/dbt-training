@@ -7,3 +7,4 @@
 
 select * FROM 
 {{ source('globalmart', 'customer') }}
+

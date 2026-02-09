@@ -4,7 +4,7 @@ with orders as
 
 select orderid,
         sum(ordersellingprice) AS total_sp
-FROM order
+FROM orders
 GROUP BY orderid
 having total_sp<0
 
